@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { Home } from "@mui/icons-material";
 import ExerciseDetails from "./pages/ExerciseDetails";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/exercise/id:" element={<ExerciseDetails />}></Route>
       </Routes>
+      <Footer />
     </Box>
   );
 }
